@@ -5,7 +5,7 @@
 > This project is a functional calculator created using React.js. How to use it? Like the calculator, you have on your phone :)
 
 <p align="center">
-  <img src="" width="400px">
+  <img src="./img/app-screenshot.png" width="400px">
 </p>
 
 
@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Click here to see a live version of this app!](link-will-be-here-soon)
+[Click here to see a live version of this app!](https://determined-galileo-7ad112.netlify.app)
 
 ## Getting Started
 
