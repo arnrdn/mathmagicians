@@ -40,6 +40,8 @@ To get a local copy up and running follow these steps:
 
 Contributions, issues, and feature requests are welcome!
 
+[You can leave them here!](https://github.com/rdnrn/mathmagicians/issues)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
