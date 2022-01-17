@@ -23,9 +23,9 @@ class Calculator extends Component {
       <main>
         <div className="interface">
           <div className="result">
-            {next}
             {total}
             {operation}
+            {next}
           </div>
           <button type="button" onClick={this.handleClick}>AC</button>
           <button type="button" onClick={this.handleClick}>+/-</button>
