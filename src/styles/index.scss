@@ -1,6 +1,6 @@
-$wt : #fff;
-$grey: #858694;
-$navpadding: 1.5em 5em;
+@import './variables';
+@import './Calculator';
+@import './Quotes';
 
 * {
   margin: 0;
@@ -9,6 +9,8 @@ $navpadding: 1.5em 5em;
 
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family:
     -apple-system,
@@ -36,15 +38,25 @@ code {
     monospace;
 }
 
+main {
+  height: 70%;
+}
+
 a {
   text-decoration: none;
-  color: $wt; 
+  color: $wt;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 nav {
   background-color: $grey;
   color: $wt;
   padding: $navpadding;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -52,7 +64,12 @@ nav {
 }
 
 h2 {
-  margin: 2em auto;
+  margin: 0 auto 2em auto;
+  color: $text;
+}
+
+p {
+  color: $text;
 }
 
 p:nth-of-type(2) {
@@ -61,6 +78,11 @@ p:nth-of-type(2) {
 
 .content-container {
   margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 70%;
 }
 
@@ -73,9 +95,14 @@ p:nth-of-type(2) {
 
 footer {
   background-color: $grey;
+  margin-top: auto;
   padding: $navpadding;
+
   p {
     color: $wt;
   }
-}
 
+  p:nth-of-type(2) {
+    margin-top: 0.3em;
+  }
+}

@@ -1,0 +1,43 @@
+@import './variables';
+
+.title-calc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.interface {
+  border: 1px solid #bababa;
+  border-radius: $bradius;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 450px;
+
+  button {
+    border: 1px solid #bababa;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.orange-btn {
+  background-color: #f5913e;
+}
+
+.result {
+  padding: 2rem;
+  background-color: #858694;
+  color: #fff;
+  text-align: right;
+  grid-column: 1/ span 4;
+}
+
+.zero {
+  grid-column: 1/ span 2;
+}
