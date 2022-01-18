@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Quote = () => (
-  <div>
+  <div className="content-container">
     <blockquote>
       <p className="quote">
         &quot;If you know you are on the right track,

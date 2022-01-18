@@ -5,6 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
@@ -18,14 +19,17 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <body className="App">
           <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/calculator" element={<Calculator />} />
-            <Route path="/quote" element={<Quote />} />
-          </Routes>
-        </div>
+          <main>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/calculator" element={<Calculator />} />
+              <Route path="/quote" element={<Quote />} />
+            </Routes>
+          </main>
+          <Footer />
+        </body>
       </BrowserRouter>
     );
   }
