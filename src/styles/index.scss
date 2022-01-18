@@ -72,8 +72,22 @@ p {
   color: $text;
 }
 
+footer {
+  background-color: $grey;
+  margin-top: auto;
+  padding: $navpadding;
+
+  p {
+    color: $wt;
+  }
+}
+
 p:nth-of-type(2) {
   margin-top: 1em;
+}
+
+.fter p:nth-of-type(2) {
+  margin-top: 0.3em;
 }
 
 .content-container {
@@ -91,18 +105,4 @@ p:nth-of-type(2) {
   display: flex;
   justify-content: space-between;
   width: 35%;
-}
-
-footer {
-  background-color: $grey;
-  margin-top: auto;
-  padding: $navpadding;
-
-  p {
-    color: $wt;
-  }
-
-  p:nth-of-type(2) {
-    margin-top: 0.3em;
-  }
 }
