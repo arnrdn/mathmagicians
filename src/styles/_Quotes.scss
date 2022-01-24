@@ -1,0 +1,21 @@
+@import './variables';
+
+blockquote {
+  padding: 1.5em;
+  color: $text;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+  border: 2px solid $orange;
+  border-radius: $bradius;
+
+  p {
+    grid-column: 1/ span 2;
+    margin-bottom: 1em;
+  }
+}
+
+cite {
+  grid-column: 2;
+  text-align: right;
+}
