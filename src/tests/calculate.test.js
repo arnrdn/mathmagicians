@@ -37,3 +37,59 @@ describe('5 + 3 should equals 8', () => {
     expect(calculate(object, '=').total).toBe('8');
   });
 });
+
+describe('Clicked on operations', () => {
+  test('Clicked on +', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, '+').operation).toBe('+');
+  });
+
+  test('Clicked on -', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, '-').operation).toBe('-');
+  });
+
+  test('Clicked on x', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, 'x').operation).toBe('x');
+  });
+
+  test('Clicked on ÷', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, '÷').operation).toBe('÷');
+  });
+
+  test('Clicked on %', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, '%').operation).toBe('%');
+  });
+
+  test('Clicked on AC', () => {
+    const object = {
+      total: '1',
+      next: null,
+      operation: null,
+    };
+    expect(calculate(object, 'AC').total).toBe(null);
+  });
+});
