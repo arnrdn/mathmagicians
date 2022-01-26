@@ -2,7 +2,10 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -46,24 +49,6 @@
   grid-column: 1/ span 2;
 }
 
-p {
-  color: #4b4b4b;
-}
-
-blockquote p {
-  -ms-grid-column: 1;
-  grid-column: 1/ span 2;
-  margin-bottom: 1em;
-}
-
-footer p {
-  color: #fff;
-}
-
-p:nth-of-type(2) {
-  margin-top: 1em;
-}
-
 blockquote {
   padding: 1.5em;
   color: #4b4b4b;
@@ -74,6 +59,16 @@ blockquote {
   grid-template-rows: 2fr 1fr;
   border: 2px solid #f5913e;
   border-radius: 5px;
+}
+
+p {
+  color: #4b4b4b;
+}
+
+blockquote p {
+  -ms-grid-column: 1;
+  grid-column: 1/ span 2;
+  margin-bottom: 1em;
 }
 
 cite {
@@ -88,13 +83,6 @@ cite {
 }
 
 body {
-  height: 100vh;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   margin: 0;
   font-family:
     -apple-system,
@@ -112,6 +100,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#root .App {
+  height: 81.4vh;
+}
+
 code {
   font-family:
     source-code-pro,
@@ -122,8 +124,8 @@ code {
     monospace;
 }
 
-main {
-  height: 70%;
+.main {
+  height: 100%;
 }
 
 a {
@@ -156,6 +158,24 @@ h2 {
   color: #4b4b4b;
 }
 
+footer {
+  background-color: #7c7d8a;
+  margin-top: auto;
+  padding: 1.5em 5em;
+}
+
+footer p {
+  color: #fff;
+}
+
+p:nth-of-type(2) {
+  margin-top: 1em;
+}
+
+.fter p:nth-of-type(2) {
+  margin-top: 0.3em;
+}
+
 .content-container {
   margin: 0 auto;
   height: 100%;
@@ -182,14 +202,4 @@ h2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 35%;
-}
-
-footer {
-  background-color: #7c7d8a;
-  margin-top: auto;
-  padding: 1.5em 5em;
-}
-
-footer p:nth-of-type(2) {
-  margin-top: 0.3em;
 }

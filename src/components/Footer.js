@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer>
     <p className="fter author">
       Made by
-      <Link to="https://github.com/rdnrn"> Nana</Link>
+      <a href="https://github.com/rdnrn"> Nana</a>
     </p>
-    <p className="fter"><Link to="https://icons8.com/icon/DchOf6erOUjJ/calculator">Calculator icon by Icons8</Link></p>
+    <p className="fter"><a href="https://icons8.com/icon/DchOf6erOUjJ/calculator">Calculator icon by Icons8</a></p>
   </footer>
 );
 

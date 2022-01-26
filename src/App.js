@@ -19,17 +19,17 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <body className="App">
+        <div className="App">
           <Navbar />
-          <main>
+          <div className="main">
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/calculator" element={<Calculator />} />
               <Route path="/quote" element={<Quote />} />
             </Routes>
-          </main>
+          </div>
           <Footer />
-        </body>
+        </div>
       </BrowserRouter>
     );
   }

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match the Quote component snapshot 1`] = `
+<div
+  className="content-container"
+>
+  <blockquote>
+    <p
+      className="quote"
+    >
+      "If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say."
+    </p>
+    <cite>
+      — Barbara McClintock
+    </cite>
+  </blockquote>
+</div>
+`;
