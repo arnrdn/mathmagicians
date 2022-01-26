@@ -8,9 +8,6 @@
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   font-family:
     -apple-system,
@@ -28,6 +25,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .App {
+    height: 81.4vh;
+  }
+}
+
 code {
   font-family:
     source-code-pro,
@@ -38,8 +45,8 @@ code {
     monospace;
 }
 
-main {
-  height: 70%;
+.main {
+  height: 100%;
 }
 
 a {
