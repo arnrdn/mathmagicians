@@ -5,7 +5,13 @@
 > This project is a functional calculator created using React.js. How to use it? Like the calculator, you have on your phone :)
 
 <p align="center">
-  <img src="./img/app-screenshot.png" width="400px">
+  <img src="./img/home.png" width="400px">
+</p>
+<p align="center">
+  <img src="./img/calculator.png" width="400px">
+</p>
+<p align="center">
+  <img src="./img/quote.png" width="400px">
 </p>
 
 
@@ -18,7 +24,7 @@
 ## Live Demo
 
 [Click here to see a live version of this app on Netlify!](https://determined-galileo-7ad112.netlify.app)
-[Click here to see a live version of this app on Heroku!]{https://math-magicians-nana.herokuapp.com/}
+[Click here to see a live version of this app on Heroku!](https://math-magicians-nana.herokuapp.com/)
 
 ## Getting Started
 
