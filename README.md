@@ -17,7 +17,8 @@
 
 ## Live Demo
 
-[Click here to see a live version of this app!](https://determined-galileo-7ad112.netlify.app)
+[Click here to see a live version of this app on Netlify!](https://determined-galileo-7ad112.netlify.app)
+[Click here to see a live version of this app on Heroku!]{https://math-magicians-nana.herokuapp.com/}
 
 ## Getting Started
 
